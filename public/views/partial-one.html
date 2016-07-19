@@ -1,0 +1,19 @@
+<div class="jumbotron text-center">
+    <h1>The Homey Page</h1>
+    <p>This page demonstrates <span class="text-danger">nested</span> views.</p>
+    <a ui-sref="list" class="btn bt-primary">Lists</a>
+    <a ui-sref="paragraph" class="btn btn-danger">Paragraph</a> <br><br>
+    <button class="btn btn-success btn-lg" ng-click="getDetails();">Get User Details</button>
+
+    <br><br>
+    <div ng-repeat="users in usersDetails">
+        <ul>
+            <li>{{users.name}}</li>
+        </ul>
+    </div>
+
+    <div>
+        <input type="text" ng-model="addUser">
+        <button class="btn btn-warning " ng-click="addingUser();">addUser</button>
+    </div>
+</div>
